@@ -1,0 +1,253 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    padding: 12px;
+    margin: -1px;
+}
+
+#logo img {
+    /* padding: 10px;
+    margin: 5px;*/
+    width: 80px;
+}
+
+#navbar {
+    display: flex;
+    position:relative;
+    top: 0px;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.4;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 21px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2px 14px;
+    margin: 13px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+/*  home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 22px;
+    align-items: center;
+    justify-content: center;
+    height: 439px;
+}
+
+#home::before {
+    content: "";
+    background: url(../rabbitwithflower.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+p {
+    color: #032f08;
+    /* background-color: aliceblue; */
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* utility classes */
+.h-primary {
+    /* color: rgb(13, 60, 101); */
+    color: #032f08;
+    border-radius: 10px;
+    font-size: 2.8rem;
+    padding: 9px;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.h-tertiary {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid aliceblue;
+    background-color: #032f08;
+    margin: 17px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+span {
+    color: red;
+
+}
+
+/* services section */
+
+#services-container {
+    /* border: 4px solid black; */
+    background-color:#e3f2fd;
+}
+
+#services {
+    margin: 0px;
+    /*34px */
+    display: flex;
+
+    /* background-color: burlywood; */
+}
+
+.box {
+
+    border: 2px solid rgb(10, 10, 10);
+    padding: 29px;
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #e8eaf6;
+
+}
+
+.box img {
+    display: block;
+    height: 268px;
+    margin: auto;
+    border-radius: 30px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+/* client */
+
+#client-section {
+    /* height: 100%; */
+     position: relative;
+}
+#client-section::before{
+    content: "";
+    height: 246px;
+    background: url(../mobile.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.client-item img {
+    height: 100px;
+
+}
+
+.client-item {
+    /* display: flex; */
+    padding: 14px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+    height: 100%;
+    margin-top: 35px;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 690px;
+    opacity: 0.4;
+    z-index: -1;
+    background: url(../img/contact-us.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    
+}
+footer{
+    background:black;
+    color: white;
+    padding: 9px 20px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
